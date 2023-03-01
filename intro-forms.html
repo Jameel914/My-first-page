@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Forms</title>
+</head>
+<body>
+    <form>
+        <label>
+        Blog post title
+        <input 
+        id="post-title" 
+        name="title" 
+        type="text" 
+        placeholder="Enter your title"
+        required
+        />
+    </label>
+
+        <label>
+            Public
+            <input
+            id="post-title" 
+            name="visibility" 
+            type="radio" 
+            value="public"
+            />
+        </label>
+        <label>
+            Private
+            <input
+            id="private-title" 
+            name="visibility" 
+            type="radio" 
+            value="private"
+            checked
+            />
+        </label>
+
+        <h3> What topics does this post cover?</h3>
+        <label>
+            Javascript
+            <input
+            id="topic-javascript" 
+            name="topic-javascript" 
+            type="checkbox" 
+            value="javascript"
+            />
+        </label>
+        <label>
+            HTML
+            <input
+            id="topic-html" 
+            name="topic-html" 
+            type="checkbox" 
+            value="html"
+            checked
+            />
+        </label>
+        <label>
+            CSS
+            <input
+            id="topic-css" 
+            name="topic-css" 
+            type="checkbox" 
+            value="css"
+            />
+        </label>
+        <br>
+
+        <label>
+            Post category
+            <select name="category" id="post-category">
+                <option>-- Select a category --</option>
+                <option value="personal">Personal</option>
+                <option value="professional">Professional</option>
+                <option value="promotion">Promotion</option>
+            </select>
+        </label>
+
+        <label>
+            Email
+            <input
+            id="email" 
+            name="email" 
+            type="email" 
+            />
+        </label>
+        <button type="submit">Create Post</button>
+    </form>
+</body>
+</html>
