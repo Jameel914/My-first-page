@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <style>
+        body {
+            background: rgb(233, 238, 243);
+        }
+    </style>
+
+    <form>
+
+        <h1>Student Registration Form</h1>
+
+        <hr />
+
+        <label>
+            <h2>Name</h2>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Middle Name - If any">
+            <input type="text" placeholder="Last Name" required>
+        </label>
+
+        <label>
+        <h2>Birth Date :
+        <input type="text" placeholder="MM/DD/YYYY"> 
+        </h2>
+        </label>
+
+        <h2>Gender :
+
+        <label>
+            Male
+        <input type="radio" name="visibility" value="Male">
+            Female
+        <input type="radio" name="visibility" value="Female">
+        </h2>
+        </label>
+
+        <h2>Address</h2>
+        <label>
+            <input type="text" placeholder="Address line 1">
+        </label>
+
+        <br>
+
+        <label>
+            <input type="text" placeholder="Address line 2">
+        </label>
+
+        <br>
+
+        <label>
+            <input type="text" placeholder="Postal / Zip">
+        </label>
+
+        <br>
+
+        <label>
+            <input type="text" placeholder="State">
+        </label>
+
+        <br>
+
+        <label>
+        <h2>Email :
+        <input type="email" placeholder="email@google.com">
+        </h2>
+        </label>
+
+        <br>
+
+        <h2>Courses</h2>
+
+        <label>
+            <select name="category" id="post-category">
+                <option>-- Courses Offerred --</option>
+                <option value="engineering">Engineering</option>
+                <option value="science">Science</option>
+                <option value="business">Business</option>
+            </select>
+        </label>
+
+        <br>
+
+        <button type="submit">Submit Application</button>
+
+        <br>
+    </form>
+</body>
+</html>
